@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.container-login{
+    background-color: #26262649;
+    width: 100vw;
+    height: 100vh;
+    display: flex; /* lado a lado */
+    justify-content: center ; /* justificar o eixo x */
+    align-items: center ; /* justificar o eixo y */
+}
+
+
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.esquerda > h1{
+    color: #212D38;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.direita{
+      width: 50vw;
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.divd-login{
+    width: 60%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px; /* eixo x e eixo y */
+    background: #90CAF9;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000050;
+}
+
+.divd-login > h1{
+    color: #212D38;
+    font-weight: 800;
+    margin: 0;
+}
+
+.entradas{
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* um embaixo do outro.... inverte o aling e o justify */
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    
+}
+
+.entradas > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color:#c7dff3;
+    color: black;
+    font-size: 12pt;
+    box-shadow: 0px 2px 5px #ffffff50;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.entradas > label{
+    color: #212D38;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.entradas > input::placeholder{ /*elemento placeholder dentro do input */
+    color: #212D38;
+    
+}
+
+.iden, .check{
+    color: #212D38;
+    font-weight:bolder;
+}
+
+.lembrar-senha{
+    padding-top: 5px;
+}
+
+.button-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px; /*afastar as letras */
+    color: white;
+    background-color: #212D38;
+    cursor: pointer;
+    }
+
+p{
+    color: #212D38;
+    font-weight:bolder;
+    line-height: 0px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #212D38;
+}
+
+.icon-google{
+    margin: auto;
+}
+
+
+.button-google{
+    display: flex;
+    font-weight: bolder;
+    width: 15%;
+    padding: 8px 0px;
+    margin: 7px 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media only screen and (max-width: 950px){
+    .divd-login{
+        width: 85%;
+
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .container-login{
+        flex-direction: column;
+    }
+    .esquerda > h1{
+        display: none;
+    }
+    .esquerda{
+        width: 100%;
+        height: auto;
+    }
+    .direita{
+        width: 100%;
+        height: auto; 
+    }
+    .esquerda > image{
+        width: 50vw;
+    }
+    .divd-login{
+        width: 90;
+    }
+    /*  */
+}
